@@ -1,0 +1,1060 @@
+/* Start Global Rules Project */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main-heading {
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+}
+
+.main-heading::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #19c8fa;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* End Global Rules Project */
+/* Start Section Header */
+.header {
+    position: fixed;
+    padding: 20px 40px;
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+    z-index: 2;
+}
+
+.header .container i.fa-house {
+    color: white;
+    font-size: 30px;
+}
+
+.header .container i.fa-house:hover {
+    color: #19c8fa;
+}
+
+.header .container .form {
+    display: inline-block;
+    position: relative;
+    margin-left: 150px;
+}
+
+.header .container .form input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 30px;
+}
+
+.header .container .form input:focus {
+    border: none;
+    outline: none;
+}
+
+.header .container .form i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 22px;
+}
+
+.header .container .links {
+    list-style: none;
+    float: right;
+    display: inline-block;
+}
+
+.header .container .links li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.header .container .links li a {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: auto;
+    transition: 0.3s;
+}
+
+.header .container .links li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #19c8fa;
+    left: 0;
+    bottom: 0px;
+    visibility: hidden;
+}
+
+.header .container .links li a:hover,
+.header .container .links li a.active {
+    color: #19c8fa;
+}
+
+.header .container .links li a:hover::before,
+.header .container .links li a.active::before {
+    visibility: visible;
+    /* left: ; */
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* End Section Header */
+/* Start Section Landing */
+.landing {
+    position: relative;
+    background-image: url(../image/car-1.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.landing .container {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.landing .container h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.landing .container p {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.landing .container button {
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.landing .container button.btn {
+    background-color: transparent;
+    border: 1px solid #19c8fa;
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.landing .container button.btn:hover {
+    background-color: #19c8fa;
+    border: none;
+}
+
+.landing .container button.btn2 {
+    background-color: #19c8fa;
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: capitalize;
+    border: none;
+}
+
+.landing .container button.btn2:hover {
+    border: 1px solid #19c8fa;
+    background-color: transparent;
+}
+
+/* End Section Landing */
+/* Start Section Welcome */
+.welcome {
+    padding-top: 100px;
+}
+
+.welcome .container {
+    width: 90%;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+
+.welcome .container .box {
+    width: 420px;
+    height: 330px;
+    padding: 15px 5px;
+    background-color: white;
+    border: 1px solid #75d3ed;
+    border-radius: 8px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.welcome .container .box::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    background-color: rgb(0 0 0 / 20%);
+    transition: 0.5s;
+}
+
+.welcome .container .box:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.welcome .container .margin {
+    margin: 0 40px;
+}
+
+.welcome .container .box i {
+    font-size: 50px;
+    color: #19c8fa;
+}
+
+.welcome .container .box h3 {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.welcome .container .box:hover h3 {
+    color: #19c8fa;
+}
+
+.welcome .container .box p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 25px;
+}
+
+.welcome .container .box a {
+    color: #19c8fa;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding-top: 20px;
+    display: block;
+}
+
+/* Enmd Section Welcome */
+/* Start Section Features */
+.features {
+    padding-top: 150px;
+}
+
+.features .container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.features .container .box {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 30px 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.features .container .box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0 0 0 / 50%);
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+}
+
+.features .container .box:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.features .container .box .image {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.features .container .box .image img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.features .container .box .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+
+.features .container .box .content h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.features .container .box .content p {
+    padding-top: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.features .container .box .content i {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.features .container .box .content i:hover {
+    color: red;
+}
+
+.features .container .box:hover .content {
+    display: block;
+}
+
+/* End Section Features */
+/* Start Section Offer */
+.offer {
+    padding-top: 150px;
+    position: relative;
+}
+
+.offer .container {
+    margin-top: 30px;
+}
+
+.offer .container .content {
+    width: 90%;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.offer .container .content .box {
+    width: 420px;
+    height: 250px;
+    margin: 30px 0;
+    padding: 10px;
+    float: left;
+    border: 1px solid #75d3ed;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.offer .container .content .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(0 0 0 / 20%);
+    transition: 0.3s;
+}
+
+.offer .container .content .box:hover::after {
+    width: 100%;
+}
+
+.offer .container .content .margin {
+    margin: 30px 50px;
+}
+
+.offer .container .content .box i {
+    color: #75d3ed;
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+}
+
+.offer .container .content .box h3 {
+    display: inline-block;
+    margin-left: 50px;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.offer .container .content .box:hover h3 {
+    color: #19c8fa;
+}
+
+.offer .container .content .box p {
+    padding-left: 50px;
+    padding-top: 10px;
+    color: #777;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+/* End Section Offer */
+/* Start Section Why US */
+.why {
+    padding-top: 150px;
+}
+
+.why .container {
+    width: 90%;
+    margin: 30px auto 0;
+    overflow: hidden;
+}
+
+.why .container .info {
+    float: left;
+    width: 550px;
+}
+
+.why .container .info h2 {
+    text-align: left;
+}
+
+.why .container .info .head::after {
+    left: 45px;
+}
+
+.why .container .info .define {
+    padding-top: 30px;
+    color: #777;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.why .container .info div {
+    padding-top: 20px;
+}
+
+.why .container .info div i {
+    color: #19c8fa;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.why .container .info div p {
+    display: inline;
+    color: #777;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.why .container .image {
+    float: left;
+    position: relative;
+}
+
+.why .container .image img {
+    width: 100%;
+}
+
+.why .container .image div {
+    width: 12px;
+    height: 12px;
+    background-color: #777;
+    margin: 10px;
+    float: left;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+}
+
+.why .container .image div.active {
+    background-color: #19c8fa;
+}
+
+/* End Section Why US */
+/* Start Section Icon */
+.icon {
+    margin-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../image/bg-color.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.icon .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.icon .container .card {
+    display: inline-block;
+    margin: 0 120px;
+    text-align: center;
+    position: relative;
+}
+
+.icon .container .card i {
+    display: block;
+    color: #19c8fa;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.icon .container .card span {
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.icon .container .card h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+/* End Section Icon */
+/* Start Section Pricing Table */
+.pricing {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.pricing .container {
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.pricing .container .box {
+    display: inline-block;
+    width: 320px;
+    height: 600px;
+    border: 1px solid #19c8fa;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.pricing .container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 50%;
+    background-color: rgb(0 0 0 / 20%);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.pricing .container .box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 50%;
+    background-color: rgb(0 0 0 / 20%);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.pricing .container .box:hover::before,
+.pricing .container .box:hover::after {
+    width: 100%;
+}
+
+.pricing .container .margin {
+    margin-left: 20px;
+}
+
+.pricing .container .margin-right {
+    margin-right: 20px;
+}
+
+.pricing .container .box .head {
+    height: 180px;
+    position: relative;
+}
+
+.pricing .container .box .head h3 {
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 3px 0;
+    text-transform: uppercase;
+}
+
+.pricing .container .box .head .circle {
+    width: 120px;
+    height: 120px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+}
+
+.pricing .container .box .head .circle p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.pricing .container .box .head .circle p strong {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.pricing .container .box .info {
+    padding-top: 50px;
+    line-height: 3;
+}
+
+.pricing .container .box .info p {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.pricing .container .box .info p span {
+    font-weight: 700;
+}
+
+.pricing .container .box .info .bottom {
+    border-bottom: 1px solid #e4e3e3;
+}
+
+.pricing .container .box button {
+    margin-top: 30px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0698c0;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* bg-color -->> aqua */
+.pricing .container .aqua-light {
+    background-color: rgb(89, 231, 231);
+}
+
+.pricing .container .box .head h3.aqua,
+.pricing .container .box .head .aqua-dark {
+    background-color: rgba(63, 171, 171, 0.733);
+}
+
+/* Bg-color -->> green */
+.pricing .container .box .green-light {
+    background-color: rgba(73, 241, 73, 0.854);
+}
+
+.pricing .container .box .head h3.green,
+.pricing .container .box .head .green-dark {
+    background-color: rgba(61, 208, 61, 0.422);
+}
+
+/* bg-color -->> blue */
+.pricing .container .box .blue-light {
+    background-color: rgb(2, 137, 248);
+}
+
+.pricing .container .box .head h3.blue,
+.pricing .container .box .head .blue-dark {
+    background-color: rgb(4, 116, 208);
+}
+
+/* bg-color -->> red */
+.pricing .container .box .red-light {
+    background-color: rgb(230, 3, 101);
+}
+
+.pricing .container .head h3.red,
+.pricing .container .head .red-dark {
+    background-color: rgba(184, 2, 81, 0.669);
+}
+
+/* End Section Pricing Table */
+/* Start Section Marketing */
+.marketing {
+    margin-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../image/bg-image.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.marketing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.marketing .container {
+    width: 60%;
+    margin: 0 auto 0;
+}
+
+.marketing .container .card {
+    display: inline-block;
+    width: 350px;
+    position: relative;
+}
+
+.marketing .container .margin {
+    margin-left: 200px;
+}
+
+.marketing .container .card .info {
+    display: inline-block;
+}
+
+.marketing .container .card .info h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.marketing .container .card .info p.nat {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0;
+    /* display: inline; */
+}
+
+.marketing .container .card p {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+    line-height: 1.7;
+    padding-top: 10px;
+}
+
+/* End Section Marketing */
+/* Start Section Our Team */
+.our-team {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: white;
+}
+
+.our-team .container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.our-team .container .box {
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(163, 183, 189);
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.our-team .container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    z-index: 3;
+}
+
+.our-team .container .box:hover::before {
+    height: 100%;
+}
+
+.our-team .container .margin {
+    margin: 0 70px;
+}
+
+.our-team .container .box .image {
+    position: relative;
+}
+
+.our-team .container .box .image img {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.our-team .container .box .social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #19c8fa;
+    z-index: 2;
+    display: none;
+}
+
+.our-team .container .box .social i {
+    display: block;
+    font-size: 22px;
+    line-height: 4;
+    color: black;
+}
+
+.our-team .container .box:hover .social {
+    display: block;
+}
+
+.our-team .container .box h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2;
+    margin: 10px 0;
+}
+
+.our-team .container .box:hover h3 {
+    color: #0698c0;
+}
+
+.our-team .container .box p {
+    color: #777;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+/* End Section Our Team */
+/* Start Section Recent */
+.recent {
+    background-color: white;
+    position: relative;
+}
+
+.recent .container {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.recent .container .box {
+    display: inline-block;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    border: 1px solid #19c8fa;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.recent .container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    z-index: 3;
+}
+
+.recent .container .box:hover::before {
+    height: 100%;
+}
+
+.recent .container .margin {
+    margin: 0 70px;
+}
+
+.recent .container .box img {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.recent .container .box .social div {
+    display: inline-block;
+    width: 100px
+}
+
+.recent .container .box .social div i {
+    font-size: 22px;
+    color: #19c8fa;
+}
+
+.recent .container .box .social div span {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.recent .container .box:hover .social div span {
+    color: #19c8fa;
+}
+
+.recent .container .box h2 {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.recent .container .box p {
+    color: #777;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+    padding-bottom: 15px;
+}
+
+.recent .container .box a {
+    color: #19c8fa;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    overflow: auto;
+    transition: 0.3s;
+}
+
+.recent .container .box a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #0698c0;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.recent .container .box:hover a::before {
+    width: 100%;
+}
+
+/* End Section Recent */
+/* Start Section Footer */
+.footer {
+    background-color: rgb(0 0 0 / 25%);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .container img {
+    width: 500px;
+}
+
+.footer .container .social i {
+    padding: 20px;
+    background-color: #19c8fa;
+    border-radius: 50%;
+    color: black;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.footer .container .social i:hover {
+    background-color: #0698c0;
+    cursor: pointer;
+}
+
+.footer .container p {
+    color: #777;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+/* End Section Footer */
